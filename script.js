@@ -14,7 +14,7 @@ const contacts = [
 
 function findContact() {
   for (let i = 0; i < contacts.length; i++) {
-    if (input.value === contacts[i].name) {
+    if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
       p.innerHTML = `Contato de ${contacts[i].name} encontrado, o seu telefone é ${contacts[i].cellphone}`;
       break;
     } else {
